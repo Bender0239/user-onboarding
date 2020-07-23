@@ -7,14 +7,16 @@ const StyledUser = styled.div`
     margin: 10px;
     padding: 5px;
 `
+//Name not working to add user because keys are different
 
 function User(props) {
     const { details } = props
     return (
         <StyledUser>
+            
             <div>Name: {details.first_name} {details.last_name}</div>
             <div>Email: {details.email}</div>
-            <img src={details.avatar}></img>
+            <img alt='' src={details.avatar}></img>
         </StyledUser>
     )
 }
